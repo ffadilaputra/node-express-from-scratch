@@ -7,6 +7,9 @@ const app = express() //Inisialisasi Express
 app.set('views', path.join(__dirname,'views'))
 app.set('view engine','hbs')
 
+//Konfigurasi Static file
+app.use(express.static('public'))
+
 const middlewareSatu = (req,res,next) => {
     console.log('Middleware Satu')
     next()
@@ -17,8 +20,8 @@ const middlewareDua = (req,res,next) => {
     next()
 }
 
-app.use(middlewareSatu)
-app.use(middlewareDua)
+// app.use(middlewareSatu)
+// app.use(middlewareDua)
 
 app.get('/', (request,response) => {
     response.render('index', {data : 'Hello Malang'} )

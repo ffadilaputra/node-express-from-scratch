@@ -1,0 +1,25 @@
+{
+  "name": "express-node-webapp",
+  "description": "Belajar Node Express",
+  "main": "server.js",
+  "authors": [
+    "Ivan Fadila Putra"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "nodejs",
+    "javascript",
+    "express"
+  ],
+  "homepage": "https://github.com/ffadilaputra/node-express-from-scratch",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bulma": "^0.6.0"
+  }
+}
