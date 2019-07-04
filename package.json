@@ -5,12 +5,15 @@
   "main": "server.js",
   "dependencies": {
     "express": "^4.16.2",
-    "hbs": "^4.0.1"
+    "hbs": "^4.0.1",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "nodejs",
@@ -18,5 +21,6 @@
     "express"
   ],
   "author": "Ivan Fadila Putra",
-  "license": "MIT"
+  "license": "MIT",
+  "snyk": true
 }
